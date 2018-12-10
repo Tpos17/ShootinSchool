@@ -1,0 +1,6 @@
+framework module Pods_SS_Free_Throws {
+  umbrella header "Pods-SS Free Throws-umbrella.h"
+
+  export *
+  module * { export * }
+}
