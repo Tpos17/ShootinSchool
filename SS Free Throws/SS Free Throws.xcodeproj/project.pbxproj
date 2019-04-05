@@ -3,11 +3,19 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 48;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		812B09A7B86F5018ABCCA8F1 /* Pods_SS_Free_Throws.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3B60B07AE7285E15C19FA39E /* Pods_SS_Free_Throws.framework */; };
+		91101B6F2256460800FEF272 /* AlertExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91101B6E2256460800FEF272 /* AlertExtension.swift */; };
+		91101B782257619800FEF272 /* ActiveCampaignService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91101B772257619800FEF272 /* ActiveCampaignService.swift */; };
+		91101B7F22576C2400FEF272 /* ServiceConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91101B7E22576C2400FEF272 /* ServiceConfig.swift */; };
+		91101B8122576D0000FEF272 /* BaseService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91101B8022576D0000FEF272 /* BaseService.swift */; };
+		91101B8322576F1300FEF272 /* RequestOutcome.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91101B8222576F1300FEF272 /* RequestOutcome.swift */; };
+		91101B8522577C4900FEF272 /* MappableExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91101B8422577C4900FEF272 /* MappableExtension.swift */; };
+		91101B8822577CC800FEF272 /* UserContactsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91101B8722577CC800FEF272 /* UserContactsModel.swift */; };
+		91101B8B225799A200FEF272 /* InternetConnectionService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91101B8A225799A200FEF272 /* InternetConnectionService.swift */; };
 		E13118A7200CEE59002D4DCB /* ViewControllerResults.swift in Sources */ = {isa = PBXBuildFile; fileRef = E13118A6200CEE59002D4DCB /* ViewControllerResults.swift */; };
 		E13EBE71200E2A2000ED032C /* helpButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = E13EBE70200E2A2000ED032C /* helpButton.swift */; };
 		E140C2142091FB78009DC0C0 /* Podfile in Resources */ = {isa = PBXBuildFile; fileRef = E140C2112091FB77009DC0C0 /* Podfile */; };
@@ -47,6 +55,14 @@
 
 /* Begin PBXFileReference section */
 		3B60B07AE7285E15C19FA39E /* Pods_SS_Free_Throws.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SS_Free_Throws.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		91101B6E2256460800FEF272 /* AlertExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertExtension.swift; sourceTree = "<group>"; };
+		91101B772257619800FEF272 /* ActiveCampaignService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActiveCampaignService.swift; sourceTree = "<group>"; };
+		91101B7E22576C2400FEF272 /* ServiceConfig.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceConfig.swift; sourceTree = "<group>"; };
+		91101B8022576D0000FEF272 /* BaseService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseService.swift; sourceTree = "<group>"; };
+		91101B8222576F1300FEF272 /* RequestOutcome.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestOutcome.swift; sourceTree = "<group>"; };
+		91101B8422577C4900FEF272 /* MappableExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MappableExtension.swift; sourceTree = "<group>"; };
+		91101B8722577CC800FEF272 /* UserContactsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserContactsModel.swift; sourceTree = "<group>"; };
+		91101B8A225799A200FEF272 /* InternetConnectionService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InternetConnectionService.swift; sourceTree = "<group>"; };
 		CDB4FF72CA198E2A50B861CC /* Pods-SS Free Throws.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SS Free Throws.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SS Free Throws/Pods-SS Free Throws.debug.xcconfig"; sourceTree = "<group>"; };
 		DD7415555A7F8B15EA502961 /* Pods-SS Free Throws.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SS Free Throws.release.xcconfig"; path = "Pods/Target Support Files/Pods-SS Free Throws/Pods-SS Free Throws.release.xcconfig"; sourceTree = "<group>"; };
 		E13118A6200CEE59002D4DCB /* ViewControllerResults.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerResults.swift; sourceTree = "<group>"; };
@@ -110,6 +126,44 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		91101B6D225645F200FEF272 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				91101B6E2256460800FEF272 /* AlertExtension.swift */,
+				91101B8422577C4900FEF272 /* MappableExtension.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		91101B7022575F5800FEF272 /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				91101B8622577C9C00FEF272 /* Models */,
+				91101B7122575F8100FEF272 /* Services */,
+			);
+			path = Networking;
+			sourceTree = "<group>";
+		};
+		91101B7122575F8100FEF272 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				91101B772257619800FEF272 /* ActiveCampaignService.swift */,
+				91101B7E22576C2400FEF272 /* ServiceConfig.swift */,
+				91101B8022576D0000FEF272 /* BaseService.swift */,
+				91101B8222576F1300FEF272 /* RequestOutcome.swift */,
+				91101B8A225799A200FEF272 /* InternetConnectionService.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		91101B8622577C9C00FEF272 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				91101B8722577CC800FEF272 /* UserContactsModel.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
 		A8FA912C5A2FBFC0BF7CE1A0 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -145,6 +199,8 @@
 		E1F3D9EE1FFECAFE001C4508 /* SS Free Throws */ = {
 			isa = PBXGroup;
 			children = (
+				91101B7022575F5800FEF272 /* Networking */,
+				91101B6D225645F200FEF272 /* Extensions */,
 				E1F3DA1D1FFEF8EB001C4508 /* Resources */,
 				E1F3D9EF1FFECAFE001C4508 /* AppDelegate.swift */,
 				E1F3D9F31FFECAFE001C4508 /* Main.storyboard */,
@@ -279,7 +335,7 @@
 				};
 			};
 			buildConfigurationList = E1F3D9E71FFECAFE001C4508 /* Build configuration list for PBXProject "SS Free Throws" */;
-			compatibilityVersion = "Xcode 8.0";
+			compatibilityVersion = "Xcode 10.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
@@ -351,9 +407,10 @@
 			files = (
 			);
 			inputPaths = (
-				"${SRCROOT}/Pods/Target Support Files/Pods-SS Free Throws/Pods-SS Free Throws-frameworks.sh",
+				"${PODS_ROOT}/Target Support Files/Pods-SS Free Throws/Pods-SS Free Throws-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
 				"${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework",
+				"${BUILT_PRODUCTS_DIR}/ObjectMapper/ObjectMapper.framework",
 				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
 				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
 			);
@@ -361,12 +418,13 @@
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleToolboxForMac.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ObjectMapper.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SS Free Throws/Pods-SS Free Throws-frameworks.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-SS Free Throws/Pods-SS Free Throws-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -381,9 +439,17 @@
 				E1F3DA2920057157001C4508 /* ViewControllerHome.swift in Sources */,
 				E1F3DA2B200574FE001C4508 /* shotPopup.swift in Sources */,
 				E1F3DA252002CA06001C4508 /* ViewControllerEnd.swift in Sources */,
+				91101B8522577C4900FEF272 /* MappableExtension.swift in Sources */,
 				E1F3DA2D20065A40001C4508 /* ViewControllerVideos.swift in Sources */,
+				91101B782257619800FEF272 /* ActiveCampaignService.swift in Sources */,
+				91101B8822577CC800FEF272 /* UserContactsModel.swift in Sources */,
 				E1F3DA3120068BF9001C4508 /* videoPopupTwo.swift in Sources */,
+				91101B8122576D0000FEF272 /* BaseService.swift in Sources */,
+				91101B6F2256460800FEF272 /* AlertExtension.swift in Sources */,
+				91101B8B225799A200FEF272 /* InternetConnectionService.swift in Sources */,
+				91101B8322576F1300FEF272 /* RequestOutcome.swift in Sources */,
 				E13EBE71200E2A2000ED032C /* helpButton.swift in Sources */,
+				91101B7F22576C2400FEF272 /* ServiceConfig.swift in Sources */,
 				E1F3D9F01FFECAFE001C4508 /* AppDelegate.swift in Sources */,
 				E1F3DA2F20067219001C4508 /* videoPopupOne.swift in Sources */,
 				E1CED9072026A3F900903419 /* CoursePopupOne.swift in Sources */,
@@ -544,7 +610,8 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
-				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
@@ -556,10 +623,13 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 44RE6LJ224;
+				DEVELOPMENT_TEAM = HEXLM5KH86;
 				INFOPLIST_FILE = "SS Free Throws/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.TApps.SS-Free-Throws.SS-Free-Throws";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
@@ -575,10 +645,13 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 44RE6LJ224;
+				DEVELOPMENT_TEAM = HEXLM5KH86;
 				INFOPLIST_FILE = "SS Free Throws/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.TApps.SS-Free-Throws.SS-Free-Throws";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
@@ -594,7 +667,11 @@
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = "SS Free ThrowsTests/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.TApps.SS-Free-Throws.SS-Free-ThrowsTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
@@ -610,7 +687,11 @@
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = "SS Free ThrowsTests/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.TApps.SS-Free-Throws.SS-Free-ThrowsTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
@@ -625,7 +706,11 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = "SS Free ThrowsUITests/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.TApps.SS-Free-Throws.SS-Free-ThrowsUITests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
@@ -640,7 +725,11 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = "SS Free ThrowsUITests/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.TApps.SS-Free-Throws.SS-Free-ThrowsUITests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;

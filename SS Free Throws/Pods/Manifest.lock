@@ -24,12 +24,14 @@ PODS:
     - nanopb/encode (= 0.3.8)
   - nanopb/decode (0.3.8)
   - nanopb/encode (0.3.8)
+  - ObjectMapper (3.4.2)
   - SwiftyJSON (4.1.0)
 
 DEPENDENCIES:
   - Alamofire (~> 4.7)
   - Firebase/AdMob
   - Firebase/Core
+  - ObjectMapper (~> 3.4)
   - SwiftyJSON (~> 4.0)
 
 SPEC REPOS:
@@ -42,6 +44,7 @@ SPEC REPOS:
     - Google-Mobile-Ads-SDK
     - GoogleToolboxForMac
     - nanopb
+    - ObjectMapper
     - SwiftyJSON
 
 SPEC CHECKSUMS:
@@ -53,8 +56,9 @@ SPEC CHECKSUMS:
   Google-Mobile-Ads-SDK: 7404f68120ae8682afeb5af001fbf4aad731c78e
   GoogleToolboxForMac: 91c824d21e85b31c2aae9bb011c5027c9b4e738f
   nanopb: 5601e6bca2dbf1ed831b519092ec110f66982ca3
+  ObjectMapper: 0d4402610f4e468903ae64629eec4784531e5c51
   SwiftyJSON: c29297daf073d2aa016295d5809cdd68045c39b3
 
-PODFILE CHECKSUM: 65e9c39d7f041dde541d116c491e06304aa0912f
+PODFILE CHECKSUM: 0f0c1b06e53956061211b0dffe668ba1aeabe5e6
 
-COCOAPODS: 1.5.3
+COCOAPODS: 1.6.0
