@@ -16,9 +16,9 @@ public struct ActiveCampaignService{
         case SaveOrUpdateContacts = "/api/3/contact/sync"
     }
     
-    fileprivate var baseUrl = "https://instandart1554392433.api-us1.com"
+    fileprivate var baseUrl = "https://shootinschool.api-us1.com"
     
-    fileprivate var activeCampaignToken = "702ae79206a3dc276e083631341c11baddbcf101299cdda513295e84ea660a01c5331ef8"
+    fileprivate var activeCampaignToken = "7e450d907d557642be6457cb7c00e307ee838d2dc2eaa3042418d90facd81402e27e5a82"
     
     fileprivate var baseService = BaseService();
     

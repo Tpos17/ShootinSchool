@@ -36,18 +36,14 @@ class ViewControllerHome: UIViewController {
                 self.loadingScreen.transform = CGAffineTransform(translationX: 0, y: -900)
                 self.loadingScreen.alpha = 0
             }, completion: { (success) in
-                if Connectivity.isConnectedToInternet() {
                     if !UserDefaults.standard.bool(forKey: "isLoggedAtActiveCampaign") {
-                        self.nameMailPrompt()
+                        if Connectivity.isConnectedToInternet() {
+                            self.nameMailPrompt()
+                        }
+                        else{
+                            self.noInternetConnectionAllert()
+                        }
                     }
-                        //todo only for development
-                    else {
-                        self.nameMailPrompt()
-                    }
-                }
-                else{
-                    self.noInternetConnectionAllert()
-                }
                 
             })
         }
